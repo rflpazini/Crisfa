@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-Br">
     <head>
-        <title>Web CRUD</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Rafael Pazini"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+
+        <title>Crisfa</title>
+
+        <link rel="stylesheet" href="assets/css/materialPreloader.css"/>
+        <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+        <link rel="stylesheet" href="assets/css/customLoader.css"/>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
     </head>
     <body>
         <div class="container">
-            <h2>Teste de CRUD</h2>
-            <ul>
-                <li><a href="Person.jsp">Cadastrar</a></li>
-                <li><a href="login.jsp">Entrar</a></li>
-            </ul>
+            <section id="crisfa">
+                <div class="crisfa-logo"></div>
+                <h2 class="title">Em breve...</h2>
+                <ul id="button-ce" class="pull-right">
+                    <li><a href="create.jsp">Cadastrar</a></li>
+                    <li><a href="login.jsp">Entrar</a></li>
+                </ul>
+            </section>
         </div>
+
+        <!-- JS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="assets/js/materialPreloader.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                preloader = new $.materialPreloader({
+                    position: 'bottom',
+                    height: '6px',
+                    col_1: '#fd9627',
+                    col_2: '#E6B52F',
+                    col_3: '#f59735',
+                    col_4: '#fecf56',
+                    fadeIn: 200,
+                    fadeOut: 200
+                });
+                preloader.on();
+            });
+        </script>
     </body>
 </html>
